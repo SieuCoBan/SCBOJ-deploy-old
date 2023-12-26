@@ -63,9 +63,9 @@ nano environment/mysql-admin.env
 nano environment/site.env
 ```
 
-Chỉnh sữa server_name trong ```dmoj/nginx/conf.d/nginx.conf```
+Chỉnh sữa server_name trong ```nginx/conf.d/nginx.conf```
 ```
-nano dmoj/nginx/conf.d/nginx.conf
+nano nginx/conf.d/nginx.conf
 ```
 ## 2.3. Build docker
 
@@ -81,7 +81,7 @@ sudo ./scripts/manage.py loaddata demo
 sudo docker compose up -d
 ```
 
-Reload docker để đảm bảo không có lỗi
+Restart docker để đảm bảo không có lỗi
 ```
 sudo docker compose restart
 ```
